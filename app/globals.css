@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 221 39% 11%;
+    --foreground: 0 0% 100%;
+    --card: 221 39% 11%;
+    --card-foreground: 0 0% 100%;
+    --popover: 221 39% 11%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 8 100% 66%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 215 28% 17%;
+    --muted-foreground: 143 10% 44%;
+    --accent: 215 28% 17%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 8 100% 66%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-brand-dark text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom styles */
+.glow-coral {
+  box-shadow: 0 0 15px rgba(255, 100, 80, 0.3);
+}
+
+.glow-coral-hover:hover {
+  box-shadow: 0 0 20px rgba(255, 100, 80, 0.5);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0f1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6450;
+  border-radius: 4px;
+}
+
+/* Selection */
+::selection {
+  background-color: #ff6450;
+  color: white;
+}
