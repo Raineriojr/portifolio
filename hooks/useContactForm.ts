@@ -12,7 +12,7 @@ export const useContactForm = () => {
       return;
     }
 
-    const phone = '5596981465034';
+    const phone = process.env.NEXT_PUBLIC_PHONE;
     const text = `Olá, meu nome é ${name}. \n\n ${message}`.trim();
 
     const whatsappLink = `https://wa.me/${phone}?text=${encodeURIComponent(
