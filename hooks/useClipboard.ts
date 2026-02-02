@@ -1,15 +1,16 @@
 import { useCallback } from 'react';
+import { toast } from 'sonner';
 
 export function useClipboard() {
   const copyToClipboard = useCallback(async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      console.log('Texto copiado para a área de transferência');
+      toast.success('Email copiado com sucesso!');
     } catch (err) {
       console.log('Falha ao copiar o texto', err);
     }
   }, []);
   return {
-    copyToClipboard
+    copyToClipboard,
   };
 }
