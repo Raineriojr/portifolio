@@ -3,12 +3,14 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Rainério Costa | Desenvolvedor de Software",
-  description: "Professional portfolio for Rainério Costa, Computer Engineer and Full Stack Developer",
+  description:
+    "Portifólio profissional de Rainério Costa, Desenvolvedor FullStack.",
 };
 
 export default function RootLayout({
@@ -25,6 +27,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} overflow-x-hidden`}>
+        <Toaster />
         <div className="min-h-screen flex flex-col bg-brand-dark selection:bg-brand-coral selection:text-white">
           <Navbar />
           <main className="flex-grow">{children}</main>
