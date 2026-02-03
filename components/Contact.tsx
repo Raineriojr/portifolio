@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
           className="space-y-4"
         >
           <div className="flex items-center gap-2">
-            <p className="text-xl font-medium">
+            <p className="text-lg sm:text-xl font-medium">
               <span className="text-brand-gray mr-2">E-mail:</span>
               raijunior20@gmail.com
             </p>
@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
               className="w-4 h-4 cursor-pointer"
             />
           </div>
-          <p className="text-xl font-medium">
+          <p className="text-lg sm:text-xl font-medium">
             <span className="text-brand-gray mr-2">Localização:</span>
             Macapá, Amapá, Brasil.
           </p>
@@ -83,8 +83,9 @@ const Contact: React.FC = () => {
         variants={formAnimation}
         initial="hidden"
         whileInView="show"
-        className="bg-brand-navy/30 p-8 rounded-2xl border border-white/5 space-y-6"
+        className="bg-brand-navy/30 p-4 sm:p-8 rounded-2xl border border-white/5 space-y-6"
       >
+        <label className="text-xl font-medium text-gray-400">Formulário</label>
         <div className="space-y-2">
           <Input
             type="text"

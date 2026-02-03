@@ -16,7 +16,7 @@ import { ProjectCard } from "./ProjectCard";
 
 const Projects: React.FC = () => {
   return (
-    <div className="min-h-screen mt-auto py-24 px-6 max-w-7xl mx-auto space-y-16">
+    <div className="min-h-screen mt-auto py-24 px-6 max-w-7xl mx-auto space-y-8 md:space-y-16">
       <SplitText
         text="Projetos"
         className="text-3xl md:text-4xl font-bold text-center"
@@ -51,9 +51,9 @@ const Projects: React.FC = () => {
               variants={iconVariants}
               className="p-3 bg-brand-navy/50 rounded-xl w-fit border border-white/5 group-hover:border-brand-coral/20 transition-colors"
             >
-              <FolderCodeIcon className="w-8 h-8 text-brand-coral" />
+              <FolderCodeIcon className="w-6 h-6 text-brand-coral" />
             </motion.div>
-            <h3 className="text-xl font-bold">Ver mais projetos</h3>
+            <h3 className="text-lg sm:text-xl font-bold">Ver mais projetos</h3>
           </div>
         </motion.div>
       </motion.div>

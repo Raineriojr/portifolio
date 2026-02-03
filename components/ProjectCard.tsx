@@ -25,21 +25,21 @@ export function ProjectCard({ project, idx }: ProjectCardProps) {
       whileInView="show"
       whileHover="hover"
       viewport={{ once: true }}
-      className="p-8 rounded-2xl bg-brand-navy/20 border transition-all duration-300 flex flex-col justify-between gap-6 group hover:border-brand-coral/40 hover:glow-coral hover:bg-brand-navy/30"
+      className="p-4 md:p-8 rounded-2xl bg-brand-navy/20 border transition-all duration-300 flex flex-col justify-between gap-6 group hover:border-brand-coral/40 hover:glow-coral hover:bg-brand-navy/30"
     >
       <motion.div
         variants={iconVariants}
-        className="p-3 bg-brand-navy/50 rounded-xl w-fit border border-white/5 group-hover:border-brand-coral/20 transition-colors"
+        className="p-2 md:p-3 bg-brand-navy/50 rounded-xl w-fit border border-white/5 group-hover:border-brand-coral/20 transition-colors"
       >
         {project.icon}
       </motion.div>
 
-      <div className="space-y-3">
-        <h3 className="text-xl font-bold">{project.title}</h3>
-        <p className="text-brand-gray leading-relaxed">{project.desc}</p>
+      <div className="space-y-2 sm:space-y-3">
+        <h3 className="text-lg sm:text-xl font-bold">{project.title}</h3>
+        <p className="text-base sm:text-lg text-brand-gray leading-relaxed">{project.desc}</p>
       </div>
 
-      <div className="flex items-center justify-between select-none">
+      <div className="flex items-end justify-between select-none">
         <div className="flex flex-wrap gap-2 mt-auto">
           {project.tags.map((tag) => (
             <span
@@ -59,7 +59,7 @@ export function ProjectCard({ project, idx }: ProjectCardProps) {
             onClick={() => handleCard(project)}
           >
             <EyeIcon className="w-4 h-4" />
-            Ver projeto
+            <span className="hidden sm:inline-block">Ver projeto</span>
           </Button>
         )}
       </div>

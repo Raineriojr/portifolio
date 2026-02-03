@@ -18,7 +18,7 @@ import {
 
 const About: React.FC = () => {
   return (
-    <div className="select-none py-24 min-h-screen px-6 max-w-7xl mt-auto mx-auto grid justify-items-center grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div className="select-none py-24 min-h-screen px-6 max-w-7xl mt-auto grid justify-items-center grid-cols-1 md:grid-cols-2 gap-16 items-center">
       <motion.div
         variants={highlightsContainer}
         initial="hidden"

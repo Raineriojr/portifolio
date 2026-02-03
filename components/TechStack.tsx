@@ -17,7 +17,7 @@ const TechStack: React.FC = () => {
       variants={techStackContainer}
       initial="hidden"
       animate={reduceMotion ? "show" : ["show", "loop"]}
-      className="relative select-none w-full overflow-hidden border-y border-white/5 bg-brand-navy/30 py-6"
+      className="relative select-none w-full overflow-hidden border-y border-white/5 bg-brand-navy/30 py-4 sm:py-6"
     >
       {/* Light sweep */}
       <motion.div
@@ -28,11 +28,12 @@ const TechStack: React.FC = () => {
       />
 
       {/* Content */}
-      <div className="relative flex whitespace-nowrap space-x-12 md:space-x-24 px-10 animate-scroll">
+      <div className="relative flex whitespace-nowrap space-x-8 sm:space-x-24 px-10 animate-scroll-medium sm:animate-scroll-slow">
         {[...techs, ...techs].map((tech, idx) => (
           <span
             key={idx}
-            className="text-brand-gray/40 text-lg md:text-2xl font-medium tracking-widest transition-colors hover:text-brand-coral/60"
+            className="text-brand-gray/40 text-xl md:text-2xl font-medium tracking-widest transition-colors hover:text-brand-coral/60"
+          
           >
             {tech}
           </span>

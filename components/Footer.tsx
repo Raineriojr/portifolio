@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="border-t border-brand-coral/20 bg-brand-dark py-12 px-6">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8">
         <motion.p
           variants={contactItem}
           initial="hidden"
