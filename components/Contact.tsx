@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
           variants={contactItem}
           initial="hidden"
           whileInView="show"
-          className="flex gap-10 pt-4"
+          className="flex gap-8 pt-4 ml-2"
         >
           {contacts.map(
             (contact, idx) =>

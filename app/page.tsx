@@ -15,11 +15,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="sobre">
+      <section id="sobre" className="relative overflow-x-hidden">
         <About />
       </section>
 
-      <section id="projetos">
+      <section id="projetos" className="relative overflow-x-hidden">
         <Projects />
       </section>
 

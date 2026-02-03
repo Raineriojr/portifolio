@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
       variants={navBarAnimations}
       initial="hidden"
       animate="show"
-      className={`flex justify-between items-center px-6 w-full fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-brand-dark/80 backdrop-blur-sm py-4" : "bg-transparent py-6"}`}
+      className={`flex justify-between items-center px-6 w-screen fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-brand-dark/80 backdrop-blur-sm py-4" : "bg-transparent py-6"}`}
     >
       <div
         className="hidden sm:flex gap-1.5 text-2xl font-bold tracking-tight cursor-pointer"
