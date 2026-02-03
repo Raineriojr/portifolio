@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           variants={contactItem}
           initial="hidden"
           whileInView="show"
-          className="text-brand-gray/60 text-sm"
+          className="text-brand-gray/60 text-sm text-center"
         >
           &copy; {new Date().getFullYear()} Rainério Costa. Todos os direitos
           reservados.

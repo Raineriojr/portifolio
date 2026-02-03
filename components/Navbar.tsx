@@ -32,17 +32,17 @@ const Navbar: React.FC = () => {
         </motion.div>
       </div>
       <div
-        className="flex sm:hidden text-2xl font-bold tracking-tight cursor-pointer"
+        className="flex sm:hidden text-3xl font-bold tracking-tight cursor-pointer"
         onClick={() => scrollToSection("início")}
       >
         R<div className="text-brand-coral">C</div>{" "}
       </div>
-      <div className="flex items-center space-x-7 sm:space-x-8">
+      <div className="flex items-center space-x-5 sm:space-x-8">
         {["Início", "Sobre", "Projetos", "Contato"].map((item) => (
           <button
             key={item}
             onClick={() => scrollToSection(item.toLowerCase())}
-            className="text-sm sm:text-base font-medium hover:text-brand-coral transition-colors"
+            className="text-base font-medium hover:text-brand-coral transition-colors"
           >
             {item}
           </button>
