@@ -1,6 +1,17 @@
 import { useMotionValue, useSpring, useTransform } from 'motion/react';
 
 export const useAvatarInteraction = () => {
+  const handleOpenFile = () => {
+    window.open('/rainerio-curriculo.pdf', '_blank');
+  };
+
+  const scrollToContact = () => {
+    const element = document.getElementById('contato');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const xRaw = useMotionValue(0);
   const yRaw = useMotionValue(0);
 
@@ -48,5 +59,7 @@ export const useAvatarInteraction = () => {
     handleMouseMove,
     handleMouseLeave,
     dropShadow,
+    scrollToContact,
+    handleOpenFile,
   };
 };

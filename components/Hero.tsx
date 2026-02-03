@@ -19,15 +19,15 @@ const text = "Me chamo Rainério Costa";
 
 const Hero: React.FC = () => {
   const reduceMotion = useReducedMotion();
-  const { rotateX, rotateY, handleMouseMove, handleMouseLeave, dropShadow } =
-    useAvatarInteraction();
-
-  const scrollToContact = () => {
-    const element = document.getElementById("contato");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const {
+    rotateX,
+    rotateY,
+    handleMouseMove,
+    handleMouseLeave,
+    dropShadow,
+    scrollToContact,
+    handleOpenFile,
+  } = useAvatarInteraction();
 
   return (
     <div className="pt-24 sm:pt-32 pb-20 px-6 mt-auto space-y-8 md:space-y-4 select-none max-w-7xl md:mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -71,6 +71,7 @@ const Hero: React.FC = () => {
           </Button>
           <Button
             variant="outline"
+            onClick={handleOpenFile}
             className="w-1/2 sm:w-fit py-3 border border-brand-coral/50 text-brand-coral font-semibold rounded-lg hover:bg-brand-coral/10 transition-colors active:scale-95"
           >
             Meu currículo
