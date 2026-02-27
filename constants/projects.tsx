@@ -11,10 +11,10 @@ export interface IProjects {
 
 export const projects: IProjects[] = [
   {
-    title: "DWC Site",
-    desc: "Site de apresentação da empresa DWC Consult.",
-    tags: ["React JS", "Material UI"],
-    link: "https://github.com/Raineriojr/dwc_site",
+    title: "Landing Page Starnet",
+    desc: "Site de apresentação da empresa Starnet.",
+    tags: ["React JS", "ShadCn UI", "Motion", "Tailwind CSS"],
+    link: "https://github.com/Raineriojr/starnet-landing-page",
     icon: <Code className="w-6 h-6 text-brand-coral" />,
   },
   {
